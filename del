@@ -1,0 +1,214 @@
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/NONE
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,PSH,URG
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,RST/FIN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN/FIN,SYN
+DROP       tcp  --  anywhere             anywhere             tcp flags:PSH,ACK/PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:ACK,URG/URG
+
+
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/NONE
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,PSH,URG
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,RST/FIN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN/FIN,SYN
+DROP       tcp  --  anywhere             anywhere             tcp flags:PSH,ACK/PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:ACK,URG/URG
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/NONE
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,PSH,URG
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,RST/FIN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN/FIN,SYN
+DROP       tcp  --  anywhere             anywhere             tcp flags:PSH,ACK/PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:ACK,URG/URG
+
+
+
+
+
+
+DROP       icmp --  localhost            anywhere            
+
+
+DROP       icmp --  localhost            anywhere            
+
+
+DROP       icmp --  localhost            anywhere            
+DROP       icmp --  localhost            anywhere            
+DROP       icmp --  localhost            anywhere            
+ACCEPT     all  --  anywhere             anywhere            
+
+
+
+
+
+
+
+
+
+
+
+
+ACCEPT     icmp --  localhost            anywhere            
+ACCEPT     icmp --  localhost            anywhere            
+
+
+ACCEPT     icmp --  localhost            anywhere            
+DROP       icmp --  localhost            anywhere            
+
+
+ACCEPT     icmp --  localhost            anywhere            
+DROP       icmp --  localhost            anywhere            
+DROP       tcp  --  127.220.32.134       anywhere            
+
+
+ACCEPT     icmp --  localhost            anywhere            
+DROP       icmp --  localhost            anywhere            
+DROP       tcp  --  127.220.32.134       anywhere            
+
+
+
+
+ACCEPT     all  --  anywhere             anywhere            
+
+
+ACCEPT     icmp --  203.252.23.3         anywhere             icmp echo-request
+ACCEPT     icmp --  203.252.23.3         anywhere             icmp echo-request
+
+
+
+
+
+
+DROP       icmp --  localhost            anywhere            
+DROP       icmp --  localhost            anywhere            
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/NONE
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,PSH,URG
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,RST/FIN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN/FIN,SYN
+DROP       tcp  --  anywhere             anywhere             tcp flags:PSH,ACK/PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:ACK,URG/URG
+DROP       icmp --  localhost            anywhere            
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/NONE
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,PSH,URG
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,RST/FIN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN/FIN,SYN
+DROP       tcp  --  anywhere             anywhere             tcp flags:PSH,ACK/PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:ACK,URG/URG
+DROP       icmp --  localhost            anywhere            
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/NONE
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,PSH,URG
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,RST/FIN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN/FIN,SYN
+DROP       tcp  --  anywhere             anywhere             tcp flags:PSH,ACK/PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:ACK,URG/URG
+
+
+DROP       icmp --  localhost            anywhere            
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/NONE
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,PSH,URG
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,RST/FIN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN/FIN,SYN
+DROP       tcp  --  anywhere             anywhere             tcp flags:PSH,ACK/PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:ACK,URG/URG
+DROP       icmp --  localhost            anywhere            
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/NONE
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,PSH,URG
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,RST/FIN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN/FIN,SYN
+DROP       tcp  --  anywhere             anywhere             tcp flags:PSH,ACK/PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:ACK,URG/URG
+
+
+DROP       icmp --  localhost            anywhere            
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/NONE
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,PSH,URG
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,RST/FIN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN/FIN,SYN
+DROP       tcp  --  anywhere             anywhere             tcp flags:PSH,ACK/PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:ACK,URG/URG
+
+
+DROP       icmp --  localhost            anywhere            
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/NONE
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,PSH,URG
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,RST/FIN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN/FIN,SYN
+DROP       tcp  --  anywhere             anywhere             tcp flags:PSH,ACK/PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:ACK,URG/URG
+ACCEPT     icmp --  203.252.23.3         anywhere             icmp echo-request
+
+
+DROP       icmp --  localhost            anywhere            
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/NONE
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,PSH,URG
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,PSH,ACK,URG/FIN,SYN,RST,PSH,ACK
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,RST/FIN,RST
+DROP       tcp  --  anywhere             anywhere             tcp flags:FIN,SYN/FIN,SYN
+DROP       tcp  --  anywhere             anywhere             tcp flags:PSH,ACK/PSH
+DROP       tcp  --  anywhere             anywhere             tcp flags:ACK,URG/URG
+ACCEPT     icmp --  203.252.23.3         anywhere             icmp echo-request
+
+
