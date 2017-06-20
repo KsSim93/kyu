@@ -51,7 +51,7 @@ del_menu(){
 	
 	if(yorn=='Y'||yorn=='y'){
 
-		system("rm myRules");
+	system("rm myRules");
 	}
 	else if(yorn=='N'||yorn=='n'){}
 
