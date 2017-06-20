@@ -619,6 +619,7 @@ void creat_INPUT_menu(){
 				fclose(fp);					
 			}
 			else{printf("잘못된 입력입니다. \n");}
+			break;
 		case 4:
 			INPUT_creat_other();
 			break;
@@ -674,6 +675,7 @@ void creat_FORWARD_menu(){
 				fclose(fp);					
 			}
 			else{printf("잘못된 입력입니다. \n");}
+			break;
 		case 4:
 			FORWARD_creat_other();
 			break;
@@ -730,6 +732,7 @@ void creat_OUTPUT_menu(){
 				fclose(fp);					
 			}
 			else{printf("잘못된 입력입니다. \n");}
+			break;
 		case 4:
 			OUTPUT_creat_other();
 			break;
@@ -746,8 +749,8 @@ void creat_OUTPUT_menu(){
 
 void creat_INPUT_DROP(){
 	char drop_1[]="iptables -A INPUT -s ";
-	char drop_2[]=" -p ";
-	char drop_3[]=" -j DROP";
+	//char drop_2[]=" -p ";
+	//char drop_3[]=" -j DROP";
 	char IP[18];
 	char protocol[30];
 	char result[BUFSIZ];	
@@ -762,9 +765,9 @@ void creat_INPUT_DROP(){
 
 	strcat(result, drop_1);
 	strcat(result, IP);
-	strcat(result, drop_2);
+	strcat(result, " -p ");
 	strcat(result, protocol);
-	strcat(result, drop_3);
+	strcat(result, " -j DROP");
 
 	fp=fopen("myRules","a");
 	fprintf(fp,"%s\n",result);
@@ -777,8 +780,8 @@ void creat_INPUT_DROP(){
 void creat_OUTPUT_DROP(){
 	
 	char drop_1[]="iptables -A OUTPUT -s ";
-	char drop_2[]=" -p ";
-	char drop_3[]=" -j DROP";
+	//char drop_2[]=" -p ";
+	//char drop_3[]=" -j DROP";
 	char IP[18];
 	char protocol[30];
 	char result[BUFSIZ];	
@@ -793,9 +796,10 @@ void creat_OUTPUT_DROP(){
 
 	strcat(result, drop_1);
 	strcat(result, IP);
-	strcat(result, drop_2);
+	strcat(result, " -p ");
 	strcat(result, protocol);
-	strcat(result, drop_3);
+	strcat(result, " -j DROP");
+
 
 	fp=fopen("myRules","a");
 	fprintf(fp,"%s\n",result);
@@ -807,8 +811,8 @@ void creat_OUTPUT_DROP(){
 void creat_FORWARD_DROP(){
 	
 	char drop_1[]="iptables -A FORWARD -s ";
-	char drop_2[]=" -p ";
-	char drop_3[]=" -j DROP";
+	//char drop_2[]=" -p ";
+	//char drop_3[]=" -j DROP";
 	char IP[18];
 	char protocol[30];
 	char result[BUFSIZ];	
@@ -823,9 +827,10 @@ void creat_FORWARD_DROP(){
 
 	strcat(result, drop_1);
 	strcat(result, IP);
-	strcat(result, drop_2);
+	strcat(result, " -p ");
 	strcat(result, protocol);
-	strcat(result, drop_3);
+	strcat(result, " -j DROP");
+
 
 	fp=fopen("myRules","a");
 	fprintf(fp,"%s\n",result);
@@ -1214,10 +1219,10 @@ void creat_menu(){
 			
 			break;
 		case 2:
-			creat_OUTPUT_menu();
+			creat_FORWARD_menu();
 			break;
 		case 3:
-			creat_FORWARD_menu();
+			creat_OUTPUT_menu();
 			break;
 		case 4: 
 			Port_control();
